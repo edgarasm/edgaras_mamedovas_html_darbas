@@ -1,0 +1,87 @@
+footer {
+  .links {
+    color: #555555;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    &img {
+      display: block;
+    }
+    h4 {
+      display: block;
+    }
+    // i.fa-facebook-square {
+    //     color: #ff3998;
+    //     border-radius: 50%;
+    // }
+    & .about {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      flex-basis: 40%;
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      a {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 100%;
+      }
+    }
+    & .nft {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      flex-basis: 40%;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      a {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 100%;
+      }
+    }
+    & .contact {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      flex-basis: 40%;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      a {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 100%;
+      }
+    }
+    & .social {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      flex-basis: 40%;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      a {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 100%;
+      }
+    }
+  }
+  p {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 400;
+    color: #999999;
+  }
+}

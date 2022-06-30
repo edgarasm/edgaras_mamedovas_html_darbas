@@ -8,4 +8,8 @@
   padding: 1rem 3rem;
   border-radius: 40px;
   border: red 3px solid;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(252, 107, 107);
+  }
 }

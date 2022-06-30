@@ -2,19 +2,13 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #ededed;
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 img {
-  max-width: 100%;
+  // max-width: 100%;
 }
 
 h1,
@@ -28,7 +22,7 @@ p {
 }
 
 .container {
-  max-width: 900px;
+  // max-width: 900px;
   margin: 0 auto;
   padding: 0 2rem;
 }

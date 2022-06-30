@@ -4,19 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #ededed;
-}
-
 a {
   text-decoration: none;
   color: inherit;
-}
-
-img {
-  max-width: 100%;
 }
 
 h1,
@@ -30,7 +20,6 @@ p {
 }
 
 .container {
-  max-width: 900px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -45,74 +34,74 @@ p {
   padding: 1rem 3rem;
   border-radius: 40px;
   border: red 3px solid;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(252, 107, 107);
 }
 
-body {
-  font-family: "Inter", sans-serif;
+header {
+  width: 100%;
   background-color: #ffffff;
-  font-size: 16px;
-  margin-bottom: 1000px;
-}
-
-.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+  padding-top: 2rem;
 }
-.nav i {
+header i {
   color: #999999;
   font-size: 2rem;
 }
 
-.card {
+.section1 {
+  padding-top: 5rem;
   position: relative;
   width: 70%;
   margin-bottom: 5rem;
 }
-.card h4 {
+.section1 h4 {
   font-size: 1rem;
   color: #ff3998;
   font-weight: 700;
 }
-.card h1 {
+.section1 h1 {
   font-size: 3rem;
   color: #111111;
   font-weight: 900;
 }
-.card p {
+.section1 p {
   font-size: 20px;
   color: #555555;
   font-weight: 400;
 }
-.card img {
+.section1 img {
   position: absolute;
-  transform: translate(300px, -450px);
+  transform: translate(150px, -600px);
 }
 
-.section {
+.section2 {
   position: relative;
   margin-bottom: 5rem;
+  text-align: center;
 }
-.section img {
+.section2 img {
   position: absolute;
   z-index: -1;
+  height: 326px;
 }
-.section h2 {
+.section2 h2 {
   padding-top: 1rem;
   font-size: 40px;
   font-weight: 500;
 }
-.section p {
+.section2 p {
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
   color: #555555;
 }
 
-.companies {
+.section3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -122,18 +111,18 @@ body {
   margin-bottom: 5rem;
 }
 
-.nft h2 {
+.section4 h2 {
   font-size: 40px;
   font-weight: 500;
   color: #111111;
 }
-.nft p {
+.section4 p {
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
   color: #555555;
 }
-.nft p a {
+.section4 p a {
   text-decoration-line: underline;
 }
 
@@ -179,7 +168,7 @@ body {
   font-weight: 400;
 }
 
-.card2 {
+.section5 {
   position: relative;
   border-top: 2px solid #555555;
   border-bottom: 2px solid #555555;
@@ -195,7 +184,7 @@ footer .linksimg {
   display: block;
 }
 footer .links h4 {
-  display: inline-block;
+  display: block;
 }
 footer .links .about {
   display: flex;
@@ -262,4 +251,10 @@ footer p {
   line-height: 100%;
   font-weight: 400;
   color: #999999;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  padding: 0 2rem;
 }/*# sourceMappingURL=main.css.map */

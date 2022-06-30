@@ -1,0 +1,57 @@
+.section4 {
+  h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #111111;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #555555;
+    a {
+      text-decoration-line: underline;
+    }
+  }
+}
+.nfts {
+  background-color: #eeeeee;
+  border-radius: 16px;
+  margin-bottom: 8rem;
+  .series {
+    color: #ff8139;
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 500;
+  }
+  .color {
+    color: #111111;
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 500;
+  }
+  .number {
+    color: #777777;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 400;
+  }
+  .bid {
+    color: #777777;
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 500;
+  }
+  .eth {
+    color: #111111;
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 500;
+  }
+  .time {
+    color: #777777;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 400;
+  }
+}
