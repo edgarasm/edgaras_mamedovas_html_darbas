@@ -1,4 +1,5 @@
 .section4 {
+  padding: 2rem 2rem 5rem 2rem;
   h2 {
     font-size: 40px;
     font-weight: 500;
@@ -7,17 +8,18 @@
   p {
     font-size: 20px;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 30px;
     color: #555555;
     a {
       text-decoration-line: underline;
+      text-underline-offset: 3px;
     }
   }
 }
 .nfts {
   background-color: #eeeeee;
+  width: 60%;
   border-radius: 16px;
-  margin-bottom: 8rem;
   .series {
     color: #ff8139;
     font-size: 12px;

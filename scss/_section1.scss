@@ -1,25 +1,15 @@
 .section1 {
-  padding-top: 5rem;
   position: relative;
-  width: 70%;
+  margin-top: 9rem;
+  padding: 0 2rem;
   margin-bottom: 5rem;
-  h4 {
-    font-size: 1rem;
-    color: #ff3998;
-    font-weight: 700;
+  .text {
+    width: 75%;
   }
-  h1 {
-    font-size: 3rem;
-    color: #111111;
-    font-weight: 900;
-  }
-  p {
-    font-size: 20px;
-    color: #555555;
-    font-weight: 400;
-  }
-  img {
-    position: absolute;
-    transform: translate(150px, -600px);
+
+  .graphic {
+    display: none;
+    position: relative;
+    transform: translate(200px, -460px);
   }
 }

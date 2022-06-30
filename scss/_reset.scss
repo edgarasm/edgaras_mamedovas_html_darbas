@@ -2,13 +2,19 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 img {
-  // max-width: 100%;
+  max-width: 100%;
 }
 
 h1,
@@ -22,7 +28,7 @@ p {
 }
 
 .container {
-  // max-width: 900px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
 }

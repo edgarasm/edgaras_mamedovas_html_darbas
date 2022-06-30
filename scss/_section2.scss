@@ -1,9 +1,10 @@
 .section2 {
-  position: relative;
   margin-bottom: 5rem;
-  text-align: center;
+  padding: 2rem;
+  padding-top: 5rem;
+  // text-align: center;
   img {
-    position: absolute;
+    // position: absolute;
     // transform: translate(-100, 140px);
     z-index: -1;
     height: 326px;

@@ -1,16 +1,22 @@
 header {
-  // position: fixed;
-  // z-index: 1;
-  width: 100%;
-  background-color: #ffffff;
+  position: fixed;
   display: flex;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  padding: 2rem;
+  background-color: #ffffff;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 2rem;
-  // padding-bottom: 2rem;
-  // padding-right: 6rem;
-  i {
+  align-items: flex-start;
+
+  .logo {
+    // font-size: 2rem;
+  }
+  .burger {
     color: #999999;
     font-size: 2rem;
+  }
+  .nav {
+    display: none;
   }
 }

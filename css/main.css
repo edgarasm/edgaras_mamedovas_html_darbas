@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1,
@@ -20,8 +30,27 @@ p {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.text h4 {
+  font-size: 1rem;
+  color: #ff3998;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.text h1 {
+  font-size: 3rem;
+  color: #111111;
+  font-weight: 900;
+}
+.text p {
+  font-size: 20px;
+  color: #555555;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .btn {
@@ -34,6 +63,7 @@ p {
   padding: 1rem 3rem;
   border-radius: 40px;
   border: red 3px solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 .btn:hover {
@@ -41,51 +71,45 @@ p {
 }
 
 header {
-  width: 100%;
-  background-color: #ffffff;
+  position: fixed;
   display: flex;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  padding: 2rem;
+  background-color: #ffffff;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 2rem;
+  align-items: flex-start;
 }
-header i {
+header .burger {
   color: #999999;
   font-size: 2rem;
 }
+header .nav {
+  display: none;
+}
 
 .section1 {
-  padding-top: 5rem;
   position: relative;
-  width: 70%;
+  margin-top: 9rem;
+  padding: 0 2rem;
   margin-bottom: 5rem;
 }
-.section1 h4 {
-  font-size: 1rem;
-  color: #ff3998;
-  font-weight: 700;
+.section1 .text {
+  width: 75%;
 }
-.section1 h1 {
-  font-size: 3rem;
-  color: #111111;
-  font-weight: 900;
-}
-.section1 p {
-  font-size: 20px;
-  color: #555555;
-  font-weight: 400;
-}
-.section1 img {
-  position: absolute;
-  transform: translate(150px, -600px);
+.section1 .graphic {
+  display: none;
+  position: relative;
+  transform: translate(200px, -460px);
 }
 
 .section2 {
-  position: relative;
   margin-bottom: 5rem;
-  text-align: center;
+  padding: 2rem;
+  padding-top: 5rem;
 }
 .section2 img {
-  position: absolute;
   z-index: -1;
   height: 326px;
 }
@@ -102,15 +126,34 @@ header i {
 }
 
 .section3 {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  margin: 0 2rem;
-  margin-bottom: 5rem;
+  padding: 2rem;
+}
+.section3 .boomerang {
+  width: 40%;
+  flex-basis: 20%;
+}
+.section3 .blimp {
+  flex-basis: 20%;
+}
+.section3 .qrco {
+  flex-basis: 20%;
+}
+.section3 .openDoor {
+  display: none;
+}
+.section3 .droplet {
+  flex-basis: 20%;
 }
 
+.section4 {
+  padding: 2rem 2rem 5rem 2rem;
+}
 .section4 h2 {
   font-size: 40px;
   font-weight: 500;
@@ -119,17 +162,18 @@ header i {
 .section4 p {
   font-size: 20px;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 30px;
   color: #555555;
 }
 .section4 p a {
   text-decoration-line: underline;
+  text-underline-offset: 3px;
 }
 
 .nfts {
   background-color: #eeeeee;
+  width: 60%;
   border-radius: 16px;
-  margin-bottom: 8rem;
 }
 .nfts .series {
   color: #ff8139;
@@ -169,92 +213,76 @@ header i {
 }
 
 .section5 {
-  position: relative;
-  border-top: 2px solid #555555;
-  border-bottom: 2px solid #555555;
+  padding: 4rem 2rem;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+.section5 img {
+  display: none;
 }
 
+footer {
+  padding: 4rem 2rem;
+}
+footer .logos img {
+  color: #111111;
+  font-size: 28px;
+  font-weight: 400;
+  padding-bottom: 28px;
+}
+footer .logos h4 {
+  font-weight: 400;
+  height: 20px;
+  line-height: 100%;
+  color: #555555;
+}
+footer .logos i {
+  font-size: 18px;
+  color: #999999;
+  padding-right: 5px;
+}
+footer .logos i .fa-facebook-square {
+  border-radius: 50%;
+  background-color: #999999;
+}
 footer .links {
   color: #555555;
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
-}
-footer .linksimg {
-  display: block;
+  margin: 3rem 0;
 }
 footer .links h4 {
   display: block;
 }
-footer .links .about {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  flex-basis: 40%;
-}
-footer .links .about h3 {
-  font-size: 16px;
-  font-weight: 700;
-}
-footer .links .about a {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 100%;
-}
-footer .links .nft {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  flex-basis: 40%;
-}
-footer .links .nft h3 {
-  font-size: 16px;
-  font-weight: 700;
-}
-footer .links .nft a {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 100%;
-}
-footer .links .contact {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  flex-basis: 40%;
-}
-footer .links .contact h3 {
-  font-size: 16px;
-  font-weight: 700;
-}
-footer .links .contact a {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 100%;
-}
+footer .links .about,
+footer .links .nft,
+footer .links .contact,
 footer .links .social {
   display: flex;
+  gap: 20px;
   flex-direction: column;
-  padding: 2rem;
-  flex-basis: 40%;
+  flex-basis: 45%;
+  margin: 2rem 0;
 }
+footer .links .about h3,
+footer .links .nft h3,
+footer .links .contact h3,
 footer .links .social h3 {
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
+  letter-spacing: 0.1em;
 }
+footer .links .about a,
+footer .links .nft a,
+footer .links .contact a,
 footer .links .social a {
   font-size: 20px;
   font-weight: 400;
-  line-height: 100%;
 }
 footer p {
   font-size: 20px;
   line-height: 100%;
   font-weight: 400;
   color: #999999;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  background-color: #ffffff;
-  padding: 0 2rem;
 }/*# sourceMappingURL=main.css.map */
