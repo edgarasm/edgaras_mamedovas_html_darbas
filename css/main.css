@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 * {
   box-sizing: border-box;
 }
@@ -34,6 +35,18 @@ p {
   padding: 0 2rem;
 }
 
+.btn {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  background-color: transparent;
+  color: #111111;
+  text-align: center;
+  padding: 1rem 3rem;
+  border-radius: 40px;
+  border: red 3px solid;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #ffffff;
@@ -52,4 +65,201 @@ body {
 .nav i {
   color: #999999;
   font-size: 2rem;
+}
+
+.card {
+  position: relative;
+  width: 70%;
+  margin-bottom: 5rem;
+}
+.card h4 {
+  font-size: 1rem;
+  color: #ff3998;
+  font-weight: 700;
+}
+.card h1 {
+  font-size: 3rem;
+  color: #111111;
+  font-weight: 900;
+}
+.card p {
+  font-size: 20px;
+  color: #555555;
+  font-weight: 400;
+}
+.card img {
+  position: absolute;
+  transform: translate(300px, -450px);
+}
+
+.section {
+  position: relative;
+  margin-bottom: 5rem;
+}
+.section img {
+  position: absolute;
+  z-index: -1;
+}
+.section h2 {
+  padding-top: 1rem;
+  font-size: 40px;
+  font-weight: 500;
+}
+.section p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #555555;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 2rem;
+  margin-bottom: 5rem;
+}
+
+.nft h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #111111;
+}
+.nft p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #555555;
+}
+.nft p a {
+  text-decoration-line: underline;
+}
+
+.nfts {
+  background-color: #eeeeee;
+  border-radius: 16px;
+  margin-bottom: 8rem;
+}
+.nfts .series {
+  color: #ff8139;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 500;
+}
+.nfts .color {
+  color: #111111;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 500;
+}
+.nfts .number {
+  color: #777777;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 400;
+}
+.nfts .bid {
+  color: #777777;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 500;
+}
+.nfts .eth {
+  color: #111111;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 500;
+}
+.nfts .time {
+  color: #777777;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.card2 {
+  position: relative;
+  border-top: 2px solid #555555;
+  border-bottom: 2px solid #555555;
+}
+
+footer .links {
+  color: #555555;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+footer .linksimg {
+  display: block;
+}
+footer .links h4 {
+  display: inline-block;
+}
+footer .links .about {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  flex-basis: 40%;
+}
+footer .links .about h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .links .about a {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+footer .links .nft {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  flex-basis: 40%;
+}
+footer .links .nft h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .links .nft a {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+footer .links .contact {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  flex-basis: 40%;
+}
+footer .links .contact h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .links .contact a {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+footer .links .social {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  flex-basis: 40%;
+}
+footer .links .social h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .links .social a {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+footer p {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 400;
+  color: #999999;
 }/*# sourceMappingURL=main.css.map */
