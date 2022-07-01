@@ -81,12 +81,20 @@ header {
   justify-content: space-between;
   align-items: flex-start;
 }
+header .logo {
+  font-size: 28px;
+}
 header .burger {
   color: #999999;
-  font-size: 2rem;
+  font-size: 28px;
 }
 header .nav {
   display: none;
+  color: #555555;
+  gap: 20px;
+}
+header .nav .pink {
+  color: #ff3998;
 }
 
 .section1 {
@@ -100,59 +108,58 @@ header .nav {
 }
 .section1 .graphic {
   display: none;
-  position: relative;
-  transform: translate(200px, -460px);
 }
 
 .section2 {
+  text-align: left;
+  position: relative;
   margin-bottom: 5rem;
-  padding: 2rem;
-  padding-top: 5rem;
-}
-.section2 img {
-  z-index: -1;
-  height: 326px;
+  padding: 7rem 2rem 1rem 2rem;
+  background: url(../assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: max(100% - 4rem, 40rem);
+  background-position: center;
 }
 .section2 h2 {
-  padding-top: 1rem;
   font-size: 40px;
   font-weight: 500;
+  color: #111111;
 }
 .section2 p {
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
-  color: #555555;
+  color: #111111;
 }
 
 .section3 {
   width: 100%;
+  height: 49px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem;
+  padding: 10px;
 }
 .section3 .boomerang {
-  width: 40%;
-  flex-basis: 20%;
+  flex-basis: 1fr;
 }
 .section3 .blimp {
-  flex-basis: 20%;
+  flex-basis: 1fr;
 }
 .section3 .qrco {
-  flex-basis: 20%;
+  flex-basis: 1fr;
 }
 .section3 .openDoor {
+  flex-basis: 1fr;
   display: none;
 }
 .section3 .droplet {
-  flex-basis: 20%;
+  flex-basis: 1fr;
 }
 
 .section4 {
-  padding: 2rem 2rem 5rem 2rem;
+  padding: 2rem 0 5rem 2rem;
 }
 .section4 h2 {
   font-size: 40px;
@@ -171,45 +178,76 @@ header .nav {
 }
 
 .nfts {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  gap: 2rem;
+  min-width: 80%;
+  max-width: 100%;
+  min-height: 100%;
+}
+.nfts .nft {
+  width: 100%;
   background-color: #eeeeee;
-  width: 60%;
   border-radius: 16px;
 }
-.nfts .series {
+.nfts .nft-info {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+}
+.nfts .nft-info .left {
+  text-align: left;
+  align-items: flex-end;
+}
+.nfts .nft-info .left .series {
   color: #ff8139;
   font-size: 12px;
   line-height: 100%;
   font-weight: 500;
+  text-transform: uppercase;
 }
-.nfts .color {
+.nfts .nft-info .left .color {
   color: #111111;
   font-size: 20px;
   line-height: 100%;
   font-weight: 500;
 }
-.nfts .number {
+.nfts .nft-info .left .number {
   color: #777777;
   font-size: 18px;
   line-height: 100%;
   font-weight: 400;
+  margin-bottom: 0;
 }
-.nfts .bid {
+.nfts .nft-info .right {
+  text-align: right;
+}
+.nfts .nft-info .right .bid {
   color: #777777;
   font-size: 12px;
   line-height: 100%;
   font-weight: 500;
+  text-transform: uppercase;
 }
-.nfts .eth {
+.nfts .nft-info .right .eth {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-end;
+  gap: 10px;
   color: #111111;
   font-size: 20px;
   line-height: 100%;
   font-weight: 500;
 }
-.nfts .time {
+.nfts .nft-info .right .time {
   color: #777777;
   font-size: 18px;
   line-height: 100%;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .section5 {
@@ -251,9 +289,6 @@ footer .links {
   flex-wrap: wrap;
   margin: 3rem 0;
 }
-footer .links h4 {
-  display: block;
-}
 footer .links .about,
 footer .links .nft,
 footer .links .contact,
@@ -280,9 +315,53 @@ footer .links .social a {
   font-size: 20px;
   font-weight: 400;
 }
-footer p {
+footer .end {
   font-size: 20px;
   line-height: 100%;
   font-weight: 400;
   color: #999999;
+}
+footer .end .launch {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    align-items: center;
+  }
+  header .burger {
+    display: none;
+  }
+  header .nav {
+    display: flex;
+  }
+
+  .section3 {
+    flex-wrap: nowrap;
+  }
+  .section3 .openDoor {
+    display: flex;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .links {
+    flex-wrap: nowrap;
+    flex-basis: 50%;
+    justify-content: space-between;
+  }
+  footer .end {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .end .launch {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -29,7 +29,7 @@ footer {
     flex-wrap: wrap;
     margin: 3rem 0;
     h4 {
-      display: block;
+      // display: block;
     }
     & .about,
     .nft,
@@ -52,10 +52,13 @@ footer {
       }
     }
   }
-  p {
+  .end {
     font-size: 20px;
     line-height: 100%;
     font-weight: 400;
     color: #999999;
+    .launch {
+      display: none;
+    }
   }
 }

@@ -1,5 +1,5 @@
 .section4 {
-  padding: 2rem 2rem 5rem 2rem;
+  padding: 2rem 0 5rem 2rem;
   h2 {
     font-size: 40px;
     font-weight: 500;
@@ -17,43 +17,75 @@
   }
 }
 .nfts {
-  background-color: #eeeeee;
-  width: 60%;
-  border-radius: 16px;
-  .series {
-    color: #ff8139;
-    font-size: 12px;
-    line-height: 100%;
-    font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  gap: 2rem;
+  min-width: 80%;
+  max-width: 100%;
+  min-height: 100%;
+  .nft {
+    width: 100%;
+    background-color: #eeeeee;
+    border-radius: 16px;
   }
-  .color {
-    color: #111111;
-    font-size: 20px;
-    line-height: 100%;
-    font-weight: 500;
-  }
-  .number {
-    color: #777777;
-    font-size: 18px;
-    line-height: 100%;
-    font-weight: 400;
-  }
-  .bid {
-    color: #777777;
-    font-size: 12px;
-    line-height: 100%;
-    font-weight: 500;
-  }
-  .eth {
-    color: #111111;
-    font-size: 20px;
-    line-height: 100%;
-    font-weight: 500;
-  }
-  .time {
-    color: #777777;
-    font-size: 18px;
-    line-height: 100%;
-    font-weight: 400;
+  .nft-info {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+    .left {
+      text-align: left;
+      align-items: flex-end;
+      .series {
+        color: #ff8139;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .color {
+        color: #111111;
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 500;
+      }
+      .number {
+        color: #777777;
+        font-size: 18px;
+        line-height: 100%;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+    .right {
+      text-align: right;
+      .bid {
+        color: #777777;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .eth {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: flex-end;
+        gap: 10px;
+
+        color: #111111;
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 500;
+      }
+      .time {
+        color: #777777;
+        font-size: 18px;
+        line-height: 100%;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
   }
 }

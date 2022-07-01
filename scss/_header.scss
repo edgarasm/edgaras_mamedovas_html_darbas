@@ -10,13 +10,18 @@ header {
   align-items: flex-start;
 
   .logo {
-    // font-size: 2rem;
+    font-size: 28px;
   }
   .burger {
     color: #999999;
-    font-size: 2rem;
+    font-size: 28px;
   }
   .nav {
     display: none;
+    color: #555555;
+    gap: 20px;
+    .pink {
+      color: #ff3998;
+    }
   }
 }

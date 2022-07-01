@@ -1,23 +1,24 @@
 .section2 {
+  text-align: left;
+  position: relative;
   margin-bottom: 5rem;
-  padding: 2rem;
-  padding-top: 5rem;
-  // text-align: center;
-  img {
-    // position: absolute;
-    // transform: translate(-100, 140px);
-    z-index: -1;
-    height: 326px;
-  }
+  padding: 7rem 2rem 1rem 2rem;
+  background: url(../assets/background.svg);
+  background-repeat: no-repeat;
+  // height: 100%;
+  background-size: max(100% - 4rem, 40rem);
+  background-position: center;
+  // overflow: hidden;
+
   h2 {
-    padding-top: 1rem;
     font-size: 40px;
     font-weight: 500;
+    color: #111111;
   }
   p {
     font-size: 20px;
     font-weight: 400;
     line-height: 150%;
-    color: #555555;
+    color: #111111;
   }
 }
