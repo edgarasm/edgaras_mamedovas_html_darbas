@@ -8,10 +8,20 @@
       display: flex;
     }
   }
-  .section3 {
+  .section1-hero {
+    h1 {
+      font-size: 6rem;
+    }
+  }
+  .section3-press {
     flex-wrap: nowrap;
     .openDoor {
       display: flex;
+    }
+  }
+  .section5-footer-upsell {
+    .line {
+      display: none;
     }
   }
   footer {

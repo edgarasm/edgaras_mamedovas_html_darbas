@@ -1,0 +1,24 @@
+.section5-footer-upsell {
+  position: relative;
+  padding: 4rem 2rem 6rem 2rem;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  .text {
+    h1 {
+      font-size: 56px;
+    }
+    width: 56%;
+  }
+  img {
+    display: none;
+  }
+  .line {
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    position: absolute;
+    background-color: #111111;
+    opacity: 0.08;
+    transform: translateY(-260px);
+  }
+}

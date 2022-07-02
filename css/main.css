@@ -29,12 +29,6 @@ p {
   margin-top: 0;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
 .text h4 {
   font-size: 1rem;
   color: #ff3998;
@@ -42,11 +36,11 @@ p {
   letter-spacing: 0.1em;
 }
 .text h1 {
-  font-size: 3rem;
   color: #111111;
   font-weight: 900;
 }
 .text p {
+  padding-bottom: 2rem;
   font-size: 20px;
   color: #555555;
   font-weight: 400;
@@ -54,35 +48,41 @@ p {
 }
 
 .btn {
+  width: 188px;
+  height: 75px;
   font-size: 20px;
   font-weight: 600;
-  line-height: 150%;
-  background-color: transparent;
+  line-height: 30px;
   color: #111111;
   text-align: center;
-  padding: 1rem 3rem;
-  border-radius: 40px;
-  border: red 3px solid;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: url(../assets/background.svg);
+  background: transparent;
+  background-size: cover;
+  text-align: center;
+  border: none;
+  border-radius: 100px;
+  padding: 22px 56px 23px 56px;
+  outline: 4px solid rgb(255, 85, 0);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
 }
 .btn:hover {
-  background-color: rgb(252, 107, 107);
+  background-image: url(../assets/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
   position: fixed;
   display: flex;
   width: 100%;
+  max-width: 1280px;
   z-index: 1;
   top: 0;
-  padding: 2rem;
+  padding: 2rem 2rem;
   background-color: #ffffff;
   justify-content: space-between;
   align-items: flex-start;
-}
-header .logo {
-  font-size: 28px;
 }
 header .burger {
   color: #999999;
@@ -97,82 +97,95 @@ header .nav .pink {
   color: #ff3998;
 }
 
-.section1 {
+.section1-hero {
   position: relative;
-  margin-top: 9rem;
-  padding: 0 2rem;
-  margin-bottom: 5rem;
+  padding: 10rem 2rem 6rem 2rem;
 }
-.section1 .text {
+.section1-hero .text {
   width: 75%;
 }
-.section1 .graphic {
+.section1-hero .text h1 {
+  font-size: 48px;
+}
+.section1-hero .graphic {
   display: none;
+  z-index: -1;
+  position: absolute;
+  transform: translate(200px, -520px);
+  overflow: hidden;
 }
 
-.section2 {
-  text-align: left;
-  position: relative;
-  margin-bottom: 5rem;
-  padding: 7rem 2rem 1rem 2rem;
+.section2-upsell {
   background: url(../assets/background.svg);
-  background-repeat: no-repeat;
-  background-size: max(100% - 4rem, 40rem);
+  background-size: auto;
   background-position: center;
+  background-repeat: no-repeat;
 }
-.section2 h2 {
+.section2-upsell .text {
+  padding: 8rem 2rem 2rem 2rem;
+}
+.section2-upsell .text h2 {
   font-size: 40px;
   font-weight: 500;
   color: #111111;
 }
-.section2 p {
+.section2-upsell .text p {
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
   color: #111111;
 }
 
-.section3 {
-  width: 100%;
-  height: 49px;
+.section3-press {
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  gap: 2rem;
 }
-.section3 .boomerang {
+.section3-press .trim {
+  transform: translateX(-4.5rem);
+  width: 200px;
+  overflow: hidden;
+}
+.section3-press .trim img {
+  margin-left: 4.5rem;
+}
+.section3-press .blimp {
   flex-basis: 1fr;
 }
-.section3 .blimp {
+.section3-press .qrco {
   flex-basis: 1fr;
 }
-.section3 .qrco {
-  flex-basis: 1fr;
-}
-.section3 .openDoor {
+.section3-press .openDoor {
   flex-basis: 1fr;
   display: none;
 }
-.section3 .droplet {
+.section3-press .droplet {
   flex-basis: 1fr;
 }
 
-.section4 {
-  padding: 2rem 0 5rem 2rem;
+.section4-showcase {
+  width: 100%;
+  padding: 2rem 0 6rem 2rem;
 }
-.section4 h2 {
+.section4-showcase .auction {
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+}
+.section4-showcase .auction h2 {
   font-size: 40px;
   font-weight: 500;
   color: #111111;
 }
-.section4 p {
+.section4-showcase .auction p {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   color: #555555;
 }
-.section4 p a {
+.section4-showcase .auction p a {
   text-decoration-line: underline;
   text-underline-offset: 3px;
 }
@@ -181,13 +194,10 @@ header .nav .pink {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  gap: 2rem;
-  min-width: 80%;
-  max-width: 100%;
-  min-height: 100%;
+  gap: 3rem;
 }
 .nfts .nft {
-  width: 100%;
+  min-width: 290px;
   background-color: #eeeeee;
   border-radius: 16px;
 }
@@ -250,17 +260,33 @@ header .nav .pink {
   margin-bottom: 0;
 }
 
-.section5 {
-  padding: 4rem 2rem;
+.section5-footer-upsell {
+  position: relative;
+  padding: 4rem 2rem 6rem 2rem;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
-.section5 img {
+.section5-footer-upsell .text {
+  width: 56%;
+}
+.section5-footer-upsell .text h1 {
+  font-size: 56px;
+}
+.section5-footer-upsell img {
   display: none;
+}
+.section5-footer-upsell .line {
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  position: absolute;
+  background-color: #111111;
+  opacity: 0.08;
+  transform: translateY(-260px);
 }
 
 footer {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 6rem 2rem;
 }
 footer .logos img {
   color: #111111;
@@ -336,11 +362,19 @@ footer .end .launch {
     display: flex;
   }
 
-  .section3 {
+  .section1-hero h1 {
+    font-size: 6rem;
+  }
+
+  .section3-press {
     flex-wrap: nowrap;
   }
-  .section3 .openDoor {
+  .section3-press .openDoor {
     display: flex;
+  }
+
+  .section5-footer-upsell .line {
+    display: none;
   }
 
   footer {

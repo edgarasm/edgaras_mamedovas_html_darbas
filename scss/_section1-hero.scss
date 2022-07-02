@@ -1,0 +1,21 @@
+.section1-hero {
+  // width: 100%;
+  // max-width: 1120px;
+  position: relative;
+  padding: 10rem 2rem 6rem 2rem;
+  .text {
+    width: 75%;
+    h1 {
+      font-size: 48px;
+    }
+  }
+
+  .graphic {
+    // width: 100%;
+    display: none;
+    z-index: -1;
+    position: absolute;
+    transform: translate(200px, -520px);
+    overflow: hidden;
+  }
+}
