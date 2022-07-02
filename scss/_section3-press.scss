@@ -4,32 +4,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  row-gap: 2rem;
   .trim {
-    transform: translateX(-4.5rem);
-    width: 200px;
+    // width: 150px;
+    // width: 216.12px;
+    // height: 40.7px;
     overflow: hidden;
   }
-  .trim img {
-    // width: 200px;
-    margin-left: 4.5rem;
-  }
-
-  .boomerang {
-    // width: 100%;
-    // flex-basis: 1fr;
-  }
-  .blimp {
-    flex-basis: 1fr;
-  }
-  .qrco {
-    flex-basis: 1fr;
-  }
-  .openDoor {
-    flex-basis: 1fr;
-    display: none;
-  }
-  .droplet {
-    flex-basis: 1fr;
+  .trim .boomerang {
+    // width: 130px;
+    // transform: translateX(-10rem);
+    .openDoor {
+      display: none;
+    }
   }
 }

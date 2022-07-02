@@ -20,73 +20,73 @@
       }
     }
   }
-}
-.nfts {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  gap: 3rem;
-  .nft {
-    min-width: 290px;
-    background-color: #eeeeee;
-    border-radius: 16px;
-  }
-  .nft-info {
+  .nfts {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 20px;
-    .left {
-      text-align: left;
-      align-items: flex-end;
-      .series {
-        color: #ff8139;
-        font-size: 12px;
-        line-height: 100%;
-        font-weight: 500;
-        text-transform: uppercase;
-      }
-      .color {
-        color: #111111;
-        font-size: 20px;
-        line-height: 100%;
-        font-weight: 500;
-      }
-      .number {
-        color: #777777;
-        font-size: 18px;
-        line-height: 100%;
-        font-weight: 400;
-        margin-bottom: 0;
-      }
+    flex-direction: row;
+    overflow: hidden;
+    gap: 40px;
+    .nft {
+      min-width: 290px;
+      background-color: #eeeeee;
+      border-radius: 16px;
     }
-    .right {
-      text-align: right;
-      .bid {
-        color: #777777;
-        font-size: 12px;
-        line-height: 100%;
-        font-weight: 500;
-        text-transform: uppercase;
-      }
-      .eth {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
+    .nft-info {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      padding: 20px;
+      .left {
+        text-align: left;
         align-items: flex-end;
-        gap: 10px;
-
-        color: #111111;
-        font-size: 20px;
-        line-height: 100%;
-        font-weight: 500;
+        .series {
+          color: #ff8139;
+          font-size: 12px;
+          line-height: 100%;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+        .color {
+          color: #111111;
+          font-size: 20px;
+          line-height: 100%;
+          font-weight: 500;
+        }
+        .number {
+          color: #777777;
+          font-size: 18px;
+          line-height: 100%;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
       }
-      .time {
-        color: #777777;
-        font-size: 18px;
-        line-height: 100%;
-        font-weight: 400;
-        margin-bottom: 0;
+      .right {
+        text-align: right;
+        .bid {
+          color: #777777;
+          font-size: 12px;
+          line-height: 100%;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+        .eth {
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: flex-end;
+          gap: 10px;
+
+          color: #111111;
+          font-size: 20px;
+          line-height: 100%;
+          font-weight: 500;
+        }
+        .time {
+          color: #777777;
+          font-size: 18px;
+          line-height: 100%;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
       }
     }
   }

@@ -1,16 +1,17 @@
 .section5-footer-upsell {
+  background-image: url(../assets/upsell-footer-image.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 250px 170px;
   position: relative;
-  padding: 4rem 2rem 6rem 2rem;
+  padding: 64px 32px 66px 32px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
   .text {
+    width: 56%;
     h1 {
       font-size: 56px;
     }
-    width: 56%;
-  }
-  img {
-    display: none;
   }
   .line {
     width: 100%;
@@ -19,6 +20,9 @@
     position: absolute;
     background-color: #111111;
     opacity: 0.08;
-    transform: translateY(-260px);
+    transform: translateY(-240px);
+  }
+  .full-text {
+    display: none;
   }
 }

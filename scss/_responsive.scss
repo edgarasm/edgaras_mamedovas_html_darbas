@@ -1,5 +1,6 @@
 @media screen and (min-width: 768px) {
   header {
+    padding: 70px 80px;
     align-items: center;
     .burger {
       display: none;
@@ -9,32 +10,62 @@
     }
   }
   .section1-hero {
-    h1 {
-      font-size: 6rem;
+    background-size: 50%;
+    background-position: 700px -20px;
+    margin-top: 176px;
+    padding: 80px;
+    .text {
+      width: 44%;
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+  .section2-upsell {
+    padding: 80px;
+    .text {
+      padding: 154px 64px 64px 64px;
     }
   }
   .section3-press {
-    flex-wrap: nowrap;
+    padding: 80px;
+    display: flex;
     .openDoor {
       display: flex;
     }
   }
+  .section4-showcase {
+    padding: 80px;
+  }
   .section5-footer-upsell {
+    background-size: 16%;
+    background-position: 850px 110px;
+    margin: 0 80px;
+    padding: 122px 0;
+    p {
+      width: 75%;
+    }
     .line {
       display: none;
     }
+    .short-text {
+      display: none;
+    }
+    .full-text {
+      display: block;
+    }
   }
   footer {
+    padding: 80px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     .links {
-      // display: flex;
+      display: flex;
       flex-wrap: nowrap;
-      flex-basis: 50%;
-      justify-content: space-between;
+      flex-basis: 590px;
     }
     .end {
       .launch {
