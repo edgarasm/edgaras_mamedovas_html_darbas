@@ -1,21 +1,19 @@
 .section3-press {
   padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   row-gap: 2rem;
   .trim {
-    // width: 150px;
-    // width: 216.12px;
-    // height: 40.7px;
+    width: 216.12px;
+    height: 40.7px;
     overflow: hidden;
+    transform: translateX(-80px);
   }
-  .trim .boomerang {
-    // width: 130px;
-    // transform: translateX(-10rem);
-    .openDoor {
-      display: none;
-    }
+  .trim img {
+    margin: 0 0 0 80px;
+  }
+  .openDoor {
+    display: none;
   }
 }

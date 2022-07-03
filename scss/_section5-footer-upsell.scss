@@ -1,8 +1,8 @@
 .section5-footer-upsell {
   background-image: url(../assets/upsell-footer-image.svg);
-  background-size: 50%;
+  background-size: 206px;
   background-repeat: no-repeat;
-  background-position: 250px 170px;
+  background-position: 110% bottom;
   position: relative;
   padding: 64px 32px 66px 32px;
   border-top: 2px solid #eeeeee;
@@ -20,7 +20,7 @@
     position: absolute;
     background-color: #111111;
     opacity: 0.08;
-    transform: translateY(-240px);
+    transform: translateY(-235px);
   }
   .full-text {
     display: none;
