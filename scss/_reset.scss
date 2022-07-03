@@ -2,6 +2,30 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: #ffffff;
+  --h-color: #111111;
+  --p-color: #555555;
+  --text-color: #555555;
+  --card-color: #eeeeee;
+  input {
+    display: none;
+  }
+  // dark theme colors //
+  input:checked {
+    --background-color: #111111;
+    --h-color: #ffffff;
+    --p-color: #999999;
+    --text-color: #cccccc;
+    --card-color: #000000;
+    --logo-color: invert(100%);
+  }
+  // ----------------- //
+  label {
+    cursor: pointer;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
