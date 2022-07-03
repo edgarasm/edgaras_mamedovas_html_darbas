@@ -477,4 +477,18 @@ footer .end .launch {
   --p-color: #555555;
   --text-color: #555555;
   --card-color: #eeeeee;
+}
+:root input {
+  display: none;
+}
+:root input:checked {
+  --background-color: #111111;
+  --h-color: #ffffff;
+  --p-color: #999999;
+  --text-color: #cccccc;
+  --card-color: #000000;
+  --logo-color: invert(100%);
+}
+:root label {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
