@@ -1,8 +1,8 @@
 footer {
   padding: 4rem 2rem 6rem 2rem;
   .logos {
-    img {
-      color: #111111;
+    .logo {
+      filter: var(--logo-color);
       font-size: 28px;
       font-weight: 400;
       padding-bottom: 28px;
@@ -11,7 +11,7 @@ footer {
       font-weight: 400;
       font-size: 20px;
       line-height: 100%;
-      color: #555555;
+      color: var(--text-color);
     }
     i {
       font-size: 18px;
@@ -24,7 +24,7 @@ footer {
     }
   }
   .links {
-    color: #555555;
+    color: var(--text-color);
     display: flex;
     flex-wrap: wrap;
     margin: 3rem 0;
